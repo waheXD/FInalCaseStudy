@@ -24,7 +24,7 @@
                   {{
                     appointment.status == 0
                       ? "Pending"
-                      : appointment.status == 0
+                      : appointment.status == 1
                       ? "On Progress"
                       : "Completed"
                   }}
