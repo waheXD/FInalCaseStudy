@@ -26,39 +26,7 @@
                   }}
                 </td>
                 <td class="table-btn-con">
-                  <button
-                    v-if="appointment.status == 0"
-                    class="btn-green"
-                    @click="verifiedAppointment(appointment.id)"
-                  >
-                    Verified
-                  </button>
-                  <button
-                    v-if="appointment.status == 1"
-                    class="btn-green"
-                    @click="doneAppointment(appointment.id)"
-                  >
-                    Done
-                  </button>
-                  <button
-                    v-if="appointment.status == 2"
-                    class="btn-green"
-                    @click="issueMedicalRecord(appointment.id)"
-                  >
-                    Issue Record
-                  </button>
-                  <button
-                    class="btn-yellow"
-                    @click="toggleAppointment(appointment.id)"
-                  >
-                    View
-                  </button>
-                  <button
-                    class="btn-red"
-                    @click="removeAppointment(appointment.id)"
-                  >
-                    Remove
-                  </button>
+                  
                 </td>
               </tr>
             </tbody>
