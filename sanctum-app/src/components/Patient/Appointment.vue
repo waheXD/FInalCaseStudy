@@ -93,44 +93,7 @@ export default {
     CancelAppointment,
   },
   methods: {
-    async fetchAppointments() {
-      await this.$store.dispatch(
-        "fetchAppointments",
-        localStorage.getItem("user_id")
-      );
-    },
-    toggleAddAppointment() {
-      this.showAppointmentModal = !this.showAppointmentModal;
-
-      if (this.showAppointmentModal == false) {
-        this.$store.dispatch(
-          "fetchAppointments",
-          localStorage.getItem("user_id")
-        );
-      }
-    },
-    toggleAppointment(id) {
-      this.$store.getters.getAppointment(id);
-      this.showViewAppointmentModal = !this.showViewAppointmentModal;
-
-      if (this.showViewAppointmentModal == false) {
-        this.$store.dispatch(
-          "fetchAppointments",
-          localStorage.getItem("user_id")
-        );
-      }
-    },
-    cancelAppointment(id) {
-      this.$store.getters.getAppointment(id);
-      this.showCancelAppointmentModal = !this.showCancelAppointmentModal;
-
-      if (this.showCancelAppointmentModal == false) {
-        this.$store.dispatch(
-          "fetchAppointments",
-          localStorage.getItem("user_id")
-        );
-      }
-    },
+    
   },
   computed: {
     appointments() {
