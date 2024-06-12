@@ -75,5 +75,23 @@ export default {
 </script>
 
 <style scoped>
+#account .wrapper {
+  max-width: 1440px;
+}
 
+#account .account-con {
+  padding: 100px 20px 100px 100px;
+}
+
+#account .account-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+#account .account-details h6 {
+  color: var(--global-color-primary);
+  font-size: 18px;
+  font-weight: 600;
+}
 </style>
