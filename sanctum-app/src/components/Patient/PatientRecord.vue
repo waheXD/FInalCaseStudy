@@ -18,8 +18,8 @@
 
 <script>
 import HeaderPage from "../../partials/HeaderPage.vue";
-
-
+import Sidebar from "../../partials/Sidebar.vue";
+  
 export default {
   data() {
     return {
@@ -31,6 +31,7 @@ export default {
   },
   components: {
     HeaderPage,
+    Sidebar,
   },
   methods: {},
 };
@@ -38,11 +39,11 @@ export default {
 
 <style scoped>
 #account .wrapper {
-  max-width: 1500px;
+  max-width: 1440px;
 }
 
 #account .account-con {
-  padding: 150px 20px 150px 150px;
+  padding: 100px 20px 100px 100px;
 }
 
 #account .account-con h4 {
